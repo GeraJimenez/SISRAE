@@ -33,6 +33,10 @@ public class Home extends JFrame{
     Image icono=new ImageIcon("img/IconoAdec.jpg").getImage();
     JLabel etiqueta=new JLabel("Area de Trabajo");
     
+    //Criterios de evaluacion
+    
+    CriteriosEvaluacion CE = new CriteriosEvaluacion();
+    
     JMenuBar menu=new JMenuBar();
     JMenu archivo=new JMenu("Archivo"),
             sesion=new JMenu("Sesion"),
@@ -104,7 +108,7 @@ public class Home extends JFrame{
         p2.add(p2_2);
         
         p1_if.add(etiqueta); //agrego Etiqueta al Panel    
-
+        p1_if.add(CE);//añade panel de Criterios de evaluacion
         
         add(p2,BorderLayout.NORTH);
         add(inicio,BorderLayout.CENTER); //Agrego el internal frame al Frame principal
